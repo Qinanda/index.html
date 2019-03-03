@@ -1,0 +1,56 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+</head>
+<body>
+<p style="text-align: center;">[ <a href="../index.html">Home page</a> ] [ <a href="../app.html">App</a> ] [<a href="../tutorial.html">Tutorial VPN Remote</a>]&nbsp;[ <a href="../speedtest.html">Speed Test</a> ] [ <a href="https://opensignal.com/">Open Signal</a> ]<br />
+[ <a href="../tutorial.html">Tutorial Install VPN</a> ] [ <a href="../tutorial2.html">Tutorial forwarding IP Local</a> ]&nbsp;</p>
+
+<hr />
+<p style="text-align: center;">Tutorial forward IP Local ke VPN&nbsp;</p>
+
+<p style="text-align: center;">Kita akan menggunakan port SSH mikrotik&nbsp;untuk dijadikan port yang mengarah ke halaman web Access Point&nbsp;</p>
+
+<p style="text-align: center;">jadi pastikan port SSH itu aktif&nbsp;</p>
+
+<p style="text-align: center;"><img alt="" src="/image/Screenshot_8.png" style="width: 444px; height: 322px;" /></p>
+
+<p style="text-align: center;">Setelah anda login mikrotik via winbox , masuk ke IP - Firewall - NAT</p>
+
+<p style="text-align: center;">Tambahkan Rule NAT baru&nbsp;</p>
+
+<p style="text-align: center;"><img alt="" src="/image/Screenshot_9.png" /></p>
+
+<p style="text-align: center;">- Chain dipilih Dst-nat&nbsp;</p>
+
+<p style="text-align: center;">- Src address diisi 10.20.20.1 ( IP Server VPN )</p>
+
+<p style="text-align: center;">- Protocol diisi TCP&nbsp;</p>
+
+<p style="text-align: center;">- Port 22 ( Sesuai Port IP Service&nbsp; SSH)&nbsp;</p>
+
+<p style="text-align: center;"><img alt="" src="/image/Screenshot_10.png" style="width: 372px; height: 342px;" /></p>
+
+<p style="text-align: center;">Lalu pindah ke tab action , action pilih dst-nat, to addresses di isi</p>
+
+<p style="text-align: center;">IP Akses Point ( 192.168.5.3 )&nbsp;<br />
+To ports diisi 80&nbsp;<br />
+<br />
+Isi dengan IP local anda yang ingin di forward ke publik</p>
+
+<p style="text-align: center;"><img alt="" src="/image/Screenshot_11.png" /></p>
+
+<p style="text-align: center;">Setelah itu coba akses IP Publik dengan PORT yang diberikan admin .&nbsp;</p>
+
+<p style="text-align: center;">Contoh :&nbsp;&nbsp;</p>
+
+<p style="text-align: center;"><img alt="" src="/image/Screenshot_12.png" style="width: 1034px; height: 192px;" /></p>
+
+<p style="text-align: center;"><br />
+&nbsp;</p>
+
+<p style="text-align: center;"></p>
+
+<p style="text-align: center;"></p>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+</head>
+<body>
+<center>
+<center>
+<p>[ <a href="../index.html">Home page</a> ] [ <a href="../app.html">App</a> ] [<a href="../tutorial.html">Tutorial VPN Remote</a>]&nbsp;[ <a href="../speedtest.html">Speed Test</a> ] [ <a href="https://opensignal.com/">Open Signal</a> ]</p>
+
+<hr />
+<h3>Welcome to the Speed Test</h3>
+Click the Begin Test button to measure your upload and download bandwidth.<br />
+<br />
+<iframe frameborder="0" height="525" marginheight="5" marginwidth="5" name="inlineframe" scrolling="Off" src="http://speedtest.cbn.net.id" width="650"></iframe></center>
+<b>Powered by cbn.net.id</b><br />
+<br />
+<a href="../index.html" target="_blank&quot;"><blink>Back</blink></a>
+
+<form name="news">&nbsp;
+<center><textarea cols="50" name="news2" rows="3" wrap="virtual"></textarea></center>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+var newsText = new Array();
+newsText[0] = "Bla Bla";
+newsText[1] = "Bla Bla";
+newsText[2] = "Bla Bla";
+newsText[3] = "Bla Bla";
+newsText[4] = "Bla Bla";
+var ttloop = 1; 
+var tspeed = 250; 
+var tdelay = 1000; 
+// ------------- NO EDITING AFTER THIS LINE -------------
+var dwAText, cnews=0, eline=0, cchar=0, mxText;
+function doNews() {
+mxText = newsText.length - 1;
+dwAText = newsText[cnews];
+setTimeout("addChar()",1000)
+}
+function addNews() {
+cnews += 1;
+if (cnews <= mxText) {
+dwAText = newsText[cnews];
+if (dwAText.length != 0) {
+document.news.news2.value = "";
+eline = 0;
+setTimeout("addChar()",tspeed)
+}
+}
+}
+function addChar() {
+if (eline!=1) {
+if (cchar != dwAText.length) {
+nmttxt = ""; for (var k=0; k<=cchar;k++) nmttxt += dwAText.charAt(k);
+document.news.news2.value = nmttxt;
+cchar += 1;
+if (cchar != dwAText.length) document.news.news2.value += "_";
+} else {
+cchar = 0;
+eline = 1;
+}
+if (mxText==cnews && eline!=0 && ttloop!=0) {
+cnews = 0; setTimeout("addNews()",tdelay);
+} else setTimeout("addChar()",tspeed);
+} else {
+setTimeout("addNews()",tdelay)
+}
+}
+doNews()
+//]]>
+</script><br />
+<br />
+&nbsp;</center>
+</body>
+<link href="http://qishiro.xyz/image/icon.png" rel="icon" />
+<style type="text/css">html,body{text-shadow:1px 1px 2px Silver;}
+pre,td,th
+{
+  margin:0;
+  padding:0;
+}
+TD.nfo, TH.nfo {
+  font-size:12px; 
+  color:#000033;
+  line-height:1em;
+  border: 1px solid #fff;}
+</style>
+<style type="text/css">html,body{text-shadow:1px 1px 2px Silver;}
+pre,td,th
+{
+  margin:0;
+  padding:0;
+}
+TD.nfo, TH.nfo {
+  font-size:12px; 
+  color:#000033;
+  line-height:1em;
+  border: 1px solid #fff;}
+</style>
+</html>
